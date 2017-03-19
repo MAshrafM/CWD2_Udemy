@@ -4,6 +4,10 @@ body {
   margin:0;
 }
 
+html{
+  overflow-x: hidden;
+}
+
 #header {
   width:100%;
   background-color: #EEEEEE;
@@ -51,10 +55,10 @@ small{
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
 }
-#htmlPanel{
-  background-color: #ccc;
+#htmlPanel, #cssPanel, #javascriptPanel{
+  background-color: rgb(237, 237, 237);
 }
-#htmlPanel.active{
+#htmlPanel.active, #cssPanel.active, #javascriptPanel.active{
   background-color: #fff;
 }
 #output {
