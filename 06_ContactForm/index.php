@@ -10,28 +10,35 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <div class="container"> 
-      <h1>Get in touch!</h1>
-      <div id="error"><? echo $error.$successMessage; ?></div>
-      <form method="post">
-        <fieldset class="form-group">
-          <label for="email">Email address</label>
-          <input type="email" class="form-control" id="email" name="email" placeholder="Enter email">
-          <small class="text-muted">We'll never share your email with anyone else.</small>
-        </fieldset>
-        <fieldset class="form-group">
-          <label for="subject">Subject</label>
-          <input type="text" class="form-control" id="subject" name="subject" >
-        </fieldset>
-        <fieldset class="form-group">
-          <label for="exampleTextarea">What would you like to ask us?</label>
-          <textarea class="form-control" id="content" name="content" rows="3"></textarea>
-        </fieldset>
-        <button type="submit" id="submit" class="btn btn-primary">Submit</button>
-      </form>
+      <div class="box-wrapper">
+        <h1>Get in touch!</h1>
+        <div id="error"><? echo $error.$successMessage; ?></div>
+        <form method="post">
+          <fieldset class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Enter email">
+            <small class="text-muted">We'll never share your email with anyone else.</small>
+          </fieldset>
+          <fieldset class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" class="form-control" id="subject" name="subject" >
+          </fieldset>
+          <fieldset class="form-group">
+            <label for="exampleTextarea">What would you like to ask us?</label>
+            <textarea class="form-control" id="content" name="content" rows="3"></textarea>
+          </fieldset>
+          <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
     </div>
+    
+    <footer>
+      <p>The Complete Web Developer Course 2.0 &copy; 2017 MAshraf. All rights reserved.</p>
+    </footer>
     
     <!-- jQuery first, then Bootstrap JS. -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
