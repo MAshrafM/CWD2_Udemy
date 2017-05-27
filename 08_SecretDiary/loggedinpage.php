@@ -16,3 +16,19 @@
     header("Location: index.php"); 
   }
 ?>
+
+<nav class="navbar navbar-light bg-faded navbar-fixed-top">
+  <a class="navbar-brand" href="#">Secret Diary </a>
+  <div class="pull-xs-right">
+    <a href='index.php?logout=1'><button class="btn btn-success-outline" type="submit" >Log out</button></a>
+  </div>
+</nav>
+<div class="container-fluid">
+  <textarea id="diary" class="form-control">
+    <?php
+      echo $diaryContent;
+    ?>
+  </textarea>
+</div>
+
+<?php include("footer.php"); ?>
