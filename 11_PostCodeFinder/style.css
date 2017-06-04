@@ -1,0 +1,13 @@
+html {
+  box-sizing: border-box;
+  min-height:100vh;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background: linear-gradient(#93cede, #75bdd1, #49a5bf);
+}
+
